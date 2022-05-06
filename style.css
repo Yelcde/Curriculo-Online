@@ -102,24 +102,28 @@ body{
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: var(--cor3);
+    color: white;
     cursor: pointer;
+}
+
+.left-side .contactinfo .icon:hover{
+    color: var(--cor2);
 }
 
 .left-side .contactinfo .text{
     letter-spacing: 1px;
-    font-weight:100;
+    font-weight: 100;
     cursor: pointer;
 }
 
-.left-side .contactinfo .text #git{
+.left-side .contactinfo .text #link{
     text-decoration: none;
     color: var(--cor2);
 }
 
-.left-side .contactinfo .text #git:hover{
+.left-side .contactinfo .text #link:hover{
     text-decoration: underline;
-    color: #e9dcb9;
+    color: white;
 }
 
 .left-side .contactinfo ul{
@@ -131,6 +135,31 @@ body{
     margin-bottom: 10px;
 }
 
+.left-side .contactinfo .textedu{
+    letter-spacing: 2px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.left-side .contactinfo  h5{
+    color: var(--cor2);
+}
+
+.left-side .contactinfo li a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.left-side .contactinfo li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.left-side .contactinfo .last{
+    border-bottom: 1px solid var(--cor1);
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
 
 .container .right-side{
     position: relative;

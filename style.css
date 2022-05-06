@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #665e52;
+    --cor2: #c2b79b;
+    --cor3: #dad5b7;
+    --cor4: #3a5f6f;
+    --cor5: #243757;
+
+    --fonte1: 'Bebas Neue', cursive;
+}
+
+body{
+    background-color: var(--cor3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fonte1);
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: var(--cor2);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.459);
+}
+
+.container .left-side{
+    position: relative;
+    background-color: var(--cor5);
+    padding: 40px;
+    color: var(--cor2);
+}
+
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--cor1);
+}
+
+.profiletext h2{
+    padding-top: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight:100;
+}
+
+.profiletext h2:hover{
+    color: white;
+}
+
+.profiletext h2 span {
+    font-weight: 100;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+}
+
+.profiletext .imgbx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profiletext .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-side .contactinfo .title{
+    letter-spacing: 3px;
+    font-weight: 100;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.left-side .contactinfo .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: var(--cor3);
+    cursor: pointer;
+}
+
+.left-side .contactinfo .text{
+    letter-spacing: 1px;
+    font-weight:100;
+    cursor: pointer;
+}
+
+.left-side .contactinfo .text #git{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.left-side .contactinfo .text #git:hover{
+    text-decoration: underline;
+    color: #e9dcb9;
+}
+
+.left-side .contactinfo ul{
+    position: relative;
+}
+
+.left-side .contactinfo ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+.container .right-side{
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}

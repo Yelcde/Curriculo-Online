@@ -279,22 +279,26 @@ p{
         margin: 20px;
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .skills .box{
-        grid-template-columns: repeat(1, 1fr)
-    }
 }
 
 @media (max-width: 600px){
     .about .box{
+        transition: all 1s;
         flex-direction: column;
     }
 
     .about .box .text{
+        transition: all 1s;
         margin-left: 0;
     }
 
     .about .box .time{
+        transition: all 1s;
         margin-bottom: 10px;
+    }
+
+    .skills .box{
+        transition: all 1s;
+        grid-template-columns: repeat(1, 1fr)
     }
 }
